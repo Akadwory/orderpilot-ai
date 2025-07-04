@@ -1,0 +1,56 @@
+# Python virtual environment
+venv/
+.venv/
+ENV/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+
+# FastAPI and Whisper temporary folders
+temp_audio/
+audio/
+logs/
+*.log
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# macOS system files
+.DS_Store
+
+# React frontend build artifacts
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.*
+
+# OS/system
+Thumbs.db
+desktop.ini
+
+# Optional: test artifacts or debug output
+*.wav
+*.mp3
+*.tmp
+*.bak
+
+# Optional: pytest cache
+.cache/
+.pytest_cache/
+
+# Ignore large whisper model files if you later save them
+*.pt
+*.npz

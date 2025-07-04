@@ -46,6 +46,7 @@ The platform is designed for scalability, modularity, and real-world restaurant 
 ---
 
 ## Folder Structure
+
 ```text
 orderpilot-ai/
 ├── README.md
@@ -78,16 +79,3 @@ orderpilot-ai/
 │   └── init_menu_upload.py
 ├── tests/
 │   └── test_order_parser.py
----
-
-## Getting Started
-
-### 1. Clone the Repo
-```bash
-git clone https://github.com/yourname/orderpilot-ai.git
-cd orderpilot-ai
-
-2. Setup Environment
-Copy and fill in your environment config:
-
-cp .env.template .env

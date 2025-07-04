@@ -46,37 +46,38 @@ The platform is designed for scalability, modularity, and real-world restaurant 
 ---
 
 ## Folder Structure
+```text
 orderpilot-ai/
 ├── README.md
 ├── .env.template
 ├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── api/
-│ │ │ └── routes.py
-│ │ ├── services/
-│ │ │ ├── voice_agent.py
-│ │ │ ├── order_parser.py
-│ │ │ └── sms_sender.py
-│ │ ├── pos/
-│ │ │ └── square_api.py
-│ │ └── db/
-│ │ ├── models.py
-│ │ └── menu_store.py
-│ ├── requirements.txt
-│ └── Dockerfile
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── api/
+│   │   │   └── routes.py
+│   │   ├── services/
+│   │   │   ├── voice_agent.py
+│   │   │   ├── order_parser.py
+│   │   │   └── sms_sender.py
+│   │   ├── pos/
+│   │   │   └── square_api.py
+│   │   └── db/
+│   │       ├── models.py
+│   │       └── menu_store.py
+│   ├── requirements.txt
+│   └── Dockerfile
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ └── App.jsx
-│ ├── .env
-│ └── package.json
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
+│   ├── .env
+│   └── package.json
 ├── scripts/
-│ └── init_menu_upload.py
+│   └── init_menu_upload.py
 ├── tests/
-│ └── test_order_parser.py
+│   └── test_order_parser.py
 ---
 
 ## Getting Started

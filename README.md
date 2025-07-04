@@ -57,3 +57,9 @@ The platform is designed for scalability, modularity, and real-world restaurant 
 ```bash
 git clone https://github.com/yourname/orderpilot-ai.git
 cd orderpilot-ai
+
+### 2.Setup Environment Variables
+
+
+
+

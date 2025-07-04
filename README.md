@@ -47,18 +47,83 @@ The platform is designed for scalability, modularity, and real-world restaurant 
 
 ## Folder Structure
 
-
 ---
 
 ## Getting Started
-
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourname/orderpilot-ai.git
 cd orderpilot-ai
 
-### 2.Setup Environment Variables
+
+2.Setup Environment Variables
+cp .env.template .env
+# Fill in:
+# - TWILIO_ACCOUNT_SID
+# - TWILIO_AUTH_TOKEN
+# - OPENAI_API_KEY
+# - SQUARE_ACCESS_TOKEN / CLOVER_API_KEY
+
+3. Start the Backend (FastAPI)
+cd backend
+uvicorn app.main:app --reload
+
+4. Start the Frontend (React)
+cd frontend
+npm install
+npm start
+
+
+API Reference (MVP)
+Transcription Endpoint
+POST /call-transcribe
+Input: Audio file (.wav or .mp3)
+Output: JSON with transcribed text
+
+POS Order Push
+POST /send-order
+Input: JSON with structured order (items, modifiers, quantities)
+Output: Order confirmation + status
+
+Menu Management (Admin UI)
+GET /menu
+
+POST /menu
+
+PUT /menu/:item_id
+
+ Testing
+Run Backend Tests (Pytest)
+cd backend
+pytest
+
+Run Frontend Tests (Jest)
+cd frontend
+npm test
+API Testing (Optional)
+Use Postman to test:
+
+POST /call-transcribe
+
+POST /send-order
+
+
+Security & Compliance
+Environment secrets stored in .env, not committed to GitHub
+
+HTTPS enforced in deployment via Railway, Render, or AWS
+
+Twilio webhook signature validation for call spoof protection
+
+GDPR-friendly minimal log retention
+
+HIPAA-aligned modular structure (for future use cases)
+
+
+---
+
+
 
 
 
